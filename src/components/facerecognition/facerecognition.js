@@ -33,7 +33,7 @@ export default function FaceRecognition({box, searchInput}) {
         <div style={divStyle}>
         {(searchInput !== "") ? 
             <div style={divStyle2}>
-                <img id="inputImg" src={searchInput} alt="Search Input" style={imgStyle}/>
+                <img id="inputImg" src={searchInput} alt="URL is incorrect (use PNG or JPEG)" style={imgStyle}/>
                 {box.map((element, i) => {
                     return <div key={i} className="bounding-box" style={{ top: element.topRow, right: element.rightCol, bottom: element.bottomRow, left: element.leftCol}}></div>;
                 })}
