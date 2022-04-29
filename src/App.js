@@ -23,6 +23,7 @@ import FaceRecognition from "./components/facerecognition/facerecognition";
 import Login from "./components/login/login";
 import SignUp from "./components/signup/signup";
 import Navigation from "./components/navigation/navigation";
+import NotFound from "./components/notfound/notfound";
 
 function App() {
 
@@ -144,7 +145,7 @@ function App() {
                 <FaceRecognition box={box} searchInput={searchUrl} />
               </RequireAuth>
             } />
-            <Route path="*" element={<div>Nothing Here</div>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Col>
       </Row> 
