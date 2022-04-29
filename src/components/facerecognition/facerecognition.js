@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "./facerecognition.css";
 
 
@@ -40,7 +40,7 @@ export default function FaceRecognition({box, searchInput}) {
             </div> 
         :
             <div style={divStyle3}>
-                    <strong>ERROR: Please enter a valid url for image that is either in PNG or JPEG format</strong>
+                    <strong>Please enter a valid url for image that is either in PNG or JPEG format</strong>
             </div>
         }
         </div>
